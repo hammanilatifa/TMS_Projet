@@ -41,18 +41,7 @@ dist = np.zeros((NB_TOWNS,NB_TOWNS))
 
 
 
-#Calculates distance matrix
-def calculate_dist(coord):
-    for i in range(NB_TOWNS):
-        x1 = coord[i][0]
-        y1 = coord[i][1]
-        for j in range(NB_TOWNS):
-            x2 = coord[j][0]
-            y2 = coord[j][1]
-            if i == j:
-                dist[i][j] = -1
-            else:
-                dist[i][j] = math.sqrt(pow((x2-x1),2) + pow((y2-y1),2))
+
 
 
 
